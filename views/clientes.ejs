@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+</head>
+<body>
+    <h1>Proveedores</h1>
+    <ul>
+        <% proveedores.forEach(proveedor => { %>
+            <li><%= proveedor.nombrecia %></li>
+        <% }) %>
+    </ul>
+
+    <h1>TB_INSUMO</h1>
+    <ul>
+        <% insumos.forEach(insumo => { %>
+            <li><%= insumo.nominsumo %> - Stock: <%= insumo.stock %> - Precio Unitario: <%= insumo.preUni %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
